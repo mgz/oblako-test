@@ -10,7 +10,7 @@ class MessagesController < ApplicationController
     
     respond_to do |format|
       if @message.save
-        format.html {redirect_to messages_url, notice: 'Thanks! Your message is sent.'}
+        format.html {redirect_to messages_url, notice: 'Thank you, the message is sent.'}
         format.js
       else
         @page_title = "Cannot send message"
