@@ -30,7 +30,7 @@
   <br>
   <div id="success"></div>
   <div class="form-group">
-    <%= f.submit 'Send', class: "btn btn-primary btn-xl" %>
+    <%= f.submit 'Send', class: "btn btn-primary btn-xl", 'data-disable-with' => 'Sending...' %>
     <div class="float-right" id="admin_email_wrapper">
       Will be sent to <b><%= Setting.admin_email %></b> &middot; <%= link_to 'CHANGE', "javascript:changeAdminEmail('#{escape_javascript(Setting.admin_email)}')" %>
     </div>
