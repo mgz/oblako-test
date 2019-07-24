@@ -2,28 +2,28 @@
   <div class="control-group">
     <div class="form-group floating-label-form-group controls mb-0 pb-2">
       <label>Name</label>
-      <%= f.text_field :name, placeholder: 'Name', required: false, class: 'form-control', 'data-validation-required-message' => "Please enter your name." %>
+      <%= f.text_field :name, placeholder: 'Name', required: true, class: 'form-control', 'data-validation-required-message' => "Please enter your name." %>
       <p class="help-block text-danger"></p>
     </div>
   </div>
   <div class="control-group">
     <div class="form-group floating-label-form-group controls mb-0 pb-2">
       <label>Email Address</label>
-      <%= f.email_field :email, placeholder: 'Email Address', required: false, class: 'form-control', 'data-validation-required-message' => "Please enter your email address." %>
+      <%= f.email_field :email, placeholder: 'Email Address', required: true, class: 'form-control', 'data-validation-required-message' => "Please enter your email address." %>
       <p class="help-block text-danger"></p>
     </div>
   </div>
   <div class="control-group">
     <div class="form-group floating-label-form-group controls mb-0 pb-2">
       <label>Phone Number</label>
-      <%= f.text_field :phone_number, placeholder: 'Phone Number', required: false, class: 'form-control', 'data-validation-required-message' => "Please enter your phone number.", type: 'tel' %>
+      <%= f.text_field :phone_number, placeholder: 'Phone Number', required: true, class: 'form-control', 'data-validation-required-message' => "Please enter your phone number.", type: 'tel' %>
       <p class="help-block text-danger"></p>
     </div>
   </div>
   <div class="control-group">
     <div class="form-group floating-label-form-group controls mb-0 pb-2">
       <label>Message</label>
-      <%= f.text_area :text, rows: 5, class: 'form-control', placeholder: 'Message', required: false, 'data-validation-required-message' => "Please enter a message." %>
+      <%= f.text_area :text, rows: 5, class: 'form-control', placeholder: 'Message', required: true, 'data-validation-required-message' => "Please enter a message." %>
       <p class="help-block text-danger"></p>
     </div>
   </div>
