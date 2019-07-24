@@ -29,6 +29,7 @@ class MessageForm
     
     if valid?
       model.save
+      MessageMailer.with(message: model).notification_email.deliver_later
     else
       @error_message = 'Could not save your message.'
       false

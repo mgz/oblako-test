@@ -53,3 +53,6 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'jquery-rails'
 gem 'bootstrap', '~> 4.3.1'
+gem 'sendgrid-ruby'
+gem 'sendgrid-actionmailer'
+gem "rails-settings-cached", '0.7.1'

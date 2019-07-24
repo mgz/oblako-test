@@ -1,3 +1,8 @@
-// Place all the styles related to the messages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+#admin_email_wrapper {
+  color: lightgray;
+}
+#admin_email_wrapper a {
+  color: lightgray;
+  text-decoration: none;
+  border-bottom: 1px dotted lightgray;
+}

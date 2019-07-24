@@ -2,9 +2,9 @@ $('#success').html('<div class="alert alert-success"><button type="button" class
 
 $('#message_form input.form-control, #message_form textarea').on('input', function(){
     $('#success').html('');
-    $('#message_form input[type=submit]').prop('disabled', false);
+    $('#message_form input[type=submit]').prop('disabled', false).val('Send');
 });
 
 setTimeout(function(){
-  $('#message_form input[type=submit]').prop('disabled', true);
+  $('#message_form input[type=submit]').prop('disabled', true).val('Sent');
 }, 0);
