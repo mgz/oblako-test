@@ -1,0 +1,19 @@
+table.table.table-bordered.table-hover
+  thead
+    tr
+      th Time
+      th Name
+      th Email
+      th Phone
+      th Text
+  tbody
+  - @messages.each do |message|
+    tr
+      td.nowrap = localize(message.created_at, format: '%d %B %Y %H:%M')
+      td = message.name
+      td = mail_to(message.email, message.email)
+      td.nowrap.phone
+        i.fas.fa-mobile-alt
+        = message.phone_number
+      td
+        = simple_format(message.text)

@@ -1,10 +1,12 @@
 $('#success').html('<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button><strong>Thanks, your message is sent!</strong></div>');
 
-$('#message_form input.form-control, #message_form textarea').on('input', function(){
-    $('#success').html('');
-    $('#message_form input[type=submit]').prop('disabled', false).val('Send');
+$('#message_form input.form-control, #message_form textarea').on('input', function () {
+  $('#success').html('');
+  $('#message_form input[type=submit]').prop('disabled', false).val('Send');
+  $('#admin_email_wrapper').show();
 });
 
-setTimeout(function(){
+$('#admin_email_wrapper').hide();
+setTimeout(function () {
   $('#message_form input[type=submit]').prop('disabled', true).val('Sent');
 }, 0);

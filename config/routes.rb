@@ -5,4 +5,6 @@ Rails.application.routes.draw do
   namespace :sys do
     post 'set_admin_email'
   end
+  
+  get 'admin' => 'admin#index'
 end
